@@ -4,11 +4,9 @@ body {
   line-height: 1.5;
 overflow: hidden;}
 .logo {
-  display: inline-block;
-  position: absolute;
-  top: 15%;
-  left: 34%;
+  display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   height: 100vh;
   z-index: 1;
@@ -16,10 +14,22 @@ font-size: large;}
 .logoText {
   z-index: 2;
   position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-wrap: nowrap;
     background-color: #a0a29b;
+}
+
+@media screen and (max-width: 1170px){
+.logoText{
+  text-wrap: wrap;
+}
+}
+@media screen and (max-width: 1000px){
+.logoText{
+  top: 85%;
+  font-size: x-large;
+}
 }
