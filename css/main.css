@@ -8,7 +8,7 @@ overflow: hidden;}
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   z-index: 1;
 font-size: large;}
 .logoText {
@@ -20,6 +20,11 @@ font-size: large;}
     text-align: center;
     text-wrap: nowrap;
     background-color: #a0a29b;
+}
+.secretInput{
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1170px){
