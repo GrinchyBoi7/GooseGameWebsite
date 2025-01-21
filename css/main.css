@@ -24,7 +24,7 @@ font-size: large;}
 .secretInput{
   position: absolute;
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1170px){
