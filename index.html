@@ -19,25 +19,20 @@
     </a>
     <div class="secretInput">
         <div id="secretContent" class="InputArea">
-            <input type="text" id="secretKeyInput" placeholder="Enter Secret Key">
+            <input type="text" id="secretKeyInput" placeholder="">
         </div>
         <script>
             const secretKeyInput = document.getElementById('secretKeyInput');
             const secretContent = document.getElementById('secretContent');
-            const secretKey = "goose";
+            const secretKey = "goos";
     
             secretKeyInput.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
+                if (event.key === 'e') {
                     if (secretKeyInput.value === secretKey) {
                         window.location.href = 'theTeam.html';
                     }
                 }
             });
-            document.addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                secretContent.style.display = 'block';
-            }
-        });
         </script>
     </div>
         <main>

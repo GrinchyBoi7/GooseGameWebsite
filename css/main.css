@@ -24,10 +24,10 @@ font-size: large;}
 .secretInput{
   position: absolute;
   z-index: 3;
-  opacity: 1;
 }
-.InputArea{
-  display: none;
+input {
+  background: transparent;
+  border: none;
 }
 
 @media screen and (max-width: 1170px){
@@ -39,11 +39,5 @@ font-size: large;}
 .logoText{
   top: 85%;
   font-size: x-large;
-}
-.InputArea{
-  display: block;
-}
-.secretInput{
-  opacity: 0;
 }
 }
