@@ -3,18 +3,19 @@
     <head>
         <link rel="stylesheet" href="css/main.css">
         <title>Department of Dreams</title>
-        
+        <link rel="icon" href="/img/Background.png">
     </head>
     <body id="bg-img">
         <header>
         </header>
         <a href="https://matthew-fernandez.itch.io/department-of-dreams">
         <div class="logo" >
-            <img src="../img/Background.jpg" alt="Website Logo" style="width:500px;height:auto;">
-            <div class="logoText">
-                Your Dream Editor™ profile is currently being built. Please take a look at The Department of Dreams™ itch.io page in the mean time.
-            </div>
+            <img src="../img/Background.png" alt="Website Logo" style="width:500px;height:auto;">
             
+            
+        </div>
+        <div class="logoText">
+            Your online Dream Editor™ profile is almost complete. Please take a look at The Department of Dreams™ itch.io page in the mean time.
         </div>
     </a>
     <div class="secretInput">
@@ -24,12 +25,18 @@
         <script>
             const secretKeyInput = document.getElementById('secretKeyInput');
             const secretContent = document.getElementById('secretContent');
-            const secretKey = "goos";
+            const secretKey = "goose";
+            const secretKey2 = "duck";
     
             secretKeyInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter'){
                     if (secretKeyInput.value === secretKey) {
                         window.location.href = 'theTeam.html';
                     }
+                    if (secretKeyInput.value === secretKey2) {
+                        window.location.href = 'home.html';
+                    }
+                }
             });
         </script>
     </div>

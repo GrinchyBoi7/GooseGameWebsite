@@ -4,7 +4,11 @@ body {
   line-height: 1.5;
 overflow: show;}
 .logo {
+  background-position: fixed;
+  position: fixed;
   display: flex;
+  left: 50%;
+  transform: translate(-50%,0);
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -14,12 +18,24 @@ font-size: large;}
 .logoText {
   z-index: 2;
   position: absolute;
+  overflow: hidden;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-wrap: nowrap;
     background-color: #a0a29b;
+    z-index: 3;
+    animation: typing 3.5s steps(40, end);
+}
+.backing{
+  background-color: rgba(245,245,245,0.85);
+  color: black;
+  transform: translate(13rem, -59rem);
+  position: absolute;
+  width: 69rem;
+  height: 150rem;
+  z-index: 2;
 }
 .secretInput{
   position: absolute;
@@ -32,19 +48,118 @@ input {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: 0.7rem; 
+  z-index: 3;}
 .projects img {
-  width: 100%;}
+  width: 100%;
+  z-index: 3;}
 .item{
   perspective: 1000px;
   width: 30vw;
   height: 30vh;
   background:#7a7a7a;
   position: relative;
-border: none;}
+border: none;
+z-index: 3;}
 a{
   color: black;
   text-decoration: none;
+  max-width: 100%;
+}
+.banner{
+  position: absolute;
+  transform: translate(13rem, -2rem);
+  z-index: 4;
+}
+.info{
+  color: black;
+  width: 46.8rem;
+  overflow-y: hidden;
+  transform: translate(13.5rem, 11.5rem);
+  text-align: center;
+  z-index: 4;
+  position: absolute;
+}
+.clientele{
+  color: black;
+  width: 46.8rem;
+  overflow-y: hidden;
+  transform: translate(13.5rem, 25rem);
+  text-align: left;
+  z-index: 4;
+  position: absolute;
+}
+.lineBreak{
+  color: black;
+  text-align: center;
+  z-index: 4;
+}
+.title{
+  font-size: large;
+}
+.downloadButton{
+  background-color: rgb(61, 61, 244);
+  color: whitesmoke;
+  width: 6.9rem;
+  height: 4rem;
+  font-size: x-large;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; 
+  margin-top: 0.3rem;
+  border-radius: 10px;
+}
+.sideEffects{
+  color: black;
+  overflow-y: hidden;
+  width: 69rem;
+  text-align: center;
+  font-size: 9px;
+  z-index: 4;
+  position: absolute;
+  transform: translate(13rem, 87rem);
+}
+.effectsL2{
+  font-size: 8px;
+}
+.effectsL3{
+  font-size: 7px;
+}
+.effectsL4{
+  font-size: 6px;
+}
+.effectsL5{
+  font-size:5px;
+}
+.infoimage1{
+  position: absolute;
+  transform: translate(61.5rem, 11.5rem);
+  z-index: 3;
+}
+.infoimage2{
+  position: absolute;
+  transform: translate(61.5rem, 24rem);
+  z-index: 3;
+}
+.infoimage3{
+  position: absolute;
+  transform: translate(61.5rem, 36.5rem);
+  z-index: 3;
+}
+.infoimage4{
+  position: absolute;
+  transform: translate(61.5rem, 49rem);
+  z-index: 3;
+}
+.infoimage5{
+  position: absolute;
+  transform: translate(61.5rem, 61.5rem);
+  z-index: 3;
+}
+.infoimage6{
+  position: absolute;
+  transform: translate(61.5rem, 74rem);
+  z-index: 3;
 }
 
 @media screen and (max-width: 1170px){
@@ -57,4 +172,11 @@ a{
   top: 85%;
   font-size: x-large;
 }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+}
+*{
+  overflow-x: hidden;
 }
